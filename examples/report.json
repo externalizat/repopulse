@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "score": 57.17,
+  "categories": {
+    "community": 0.0,
+    "documentation": 32.5,
+    "engineering": 60.0,
+    "maintenance": 93.33,
+    "security": 100.0
+  },
+  "checks": [
+    {
+      "id": "README",
+      "category": "documentation",
+      "score": 0.0,
+      "findings": [
+        {
+          "severity": "warning",
+          "message": "README has fewer than 80 words",
+          "recommendation": "Explain purpose, features, and a concrete example.",
+          "file": "README.md",
+          "line": null,
+          "snippet": null
+        },
+        {
+          "severity": "warning",
+          "message": "No purpose or features heading detected",
+          "recommendation": "Explain purpose, features, and a concrete example.",
+          "file": "README.md",
+          "line": null,
+          "snippet": null
+        }
+      ]
+    },
+    {
+      "id": "ONBOARDING",
+      "category": "documentation",
+      "score": 50.0,
+      "findings": [
+        {
+          "severity": "warning",
+          "message": "No installation instructions detected",
+          "recommendation": "Document installation with copyable commands.",
+          "file": null,
+          "line": null,
+          "snippet": null
+        }
+      ]
+    },
+    {
+      "id": "LICENSE",
+      "category": "community",
+      "score": 0.0,
+      "findings": [
+        {
+          "severity": "warning",
+          "message": "license missing",
+          "recommendation": "Add a license document.",
+          "file": null,
+          "line": null,
+          "snippet": null
+        }
+      ]
+    },
+    {
+      "id": "CONTRIBUTING",
+      "category": "community",
+      "score": 0.0,
+      "findings": [
+        {
+          "severity": "warning",
+          "message": "contributing guide missing",
+          "recommendation": "Add a contributing guide document.",
+          "file": null,
+          "line": null,
+          "snippet": null
+        }
+      ]
+    },
+    {
+      "id": "CONDUCT",
+      "category": "community",
+      "score": 0.0,
+      "findings": [
+        {
+          "severity": "warning",
+          "message": "code of conduct missing",
+          "recommendation": "Add a code of conduct document.",
+          "file": null,
+          "line": null,
+          "snippet": null
+        }
+      ]
+    },
+    {
+      "id": "TESTS",
+      "category": "engineering",
+      "score": 0.0,
+      "findings": [
+        {
+          "severity": "warning",
+          "message": "No test source files detected",
+          "recommendation": "Add tests under tests/ or use conventional test filenames.",
+          "file": null,
+          "line": null,
+          "snippet": null
+        }
+      ]
+    },
+    {
+      "id": "CI",
+      "category": "engineering",
+      "score": 0.0,
+      "findings": [
+        {
+          "severity": "warning",
+          "message": "CI configuration missing",
+          "recommendation": "Run tests and static checks on pull requests.",
+          "file": null,
+          "line": null,
+          "snippet": null
+        }
+      ]
+    },
+    {
+      "id": "DEPENDENCIES",
+      "category": "engineering",
+      "score": 100.0,
+      "findings": []
+    },
+    {
+      "id": "ENV",
+      "category": "engineering",
+      "score": 100.0,
+      "findings": []
+    },
+    {
+      "id": "ENV_DRIFT",
+      "category": "engineering",
+      "score": 80.0,
+      "findings": [
+        {
+          "severity": "warning",
+          "message": "Environment variable SERVICE_NAME missing from examples",
+          "recommendation": "Document the variable with a safe placeholder.",
+          "file": null,
+          "line": null,
+          "snippet": null
+        },
+        {
+          "severity": "info",
+          "message": "Example variable UNUSED_SETTING has no detected code reference",
+          "recommendation": "Check scripts and deployment settings before removing it.",
+          "file": null,
+          "line": null,
+          "snippet": null
+        }
+      ]
+    },
+    {
+      "id": "LINKS",
+      "category": "documentation",
+      "score": 80.0,
+      "findings": [
+        {
+          "severity": "warning",
+          "message": "Broken relative Markdown link",
+          "recommendation": "Update the link to an existing repository file.",
+          "file": "README.md",
+          "line": 9,
+          "snippet": null
+        }
+      ]
+    },
+    {
+      "id": "TODOS",
+      "category": "maintenance",
+      "score": 80.0,
+      "findings": [
+        {
+          "severity": "warning",
+          "message": "Debt markers (TODO: 1, FIXME: 1)",
+          "recommendation": "Link unfinished work to issues and remove obsolete markers.",
+          "file": "app.py",
+          "line": null,
+          "snippet": null
+        }
+      ]
+    },
+    {
+      "id": "LARGE_FILES",
+      "category": "maintenance",
+      "score": 100.0,
+      "findings": []
+    },
+    {
+      "id": "STRUCTURE",
+      "category": "maintenance",
+      "score": 100.0,
+      "findings": []
+    },
+    {
+      "id": "CHANGELOG",
+      "category": "documentation",
+      "score": 0.0,
+      "findings": [
+        {
+          "severity": "warning",
+          "message": "changelog missing",
+          "recommendation": "Add a changelog document.",
+          "file": null,
+          "line": null,
+          "snippet": null
+        }
+      ]
+    },
+    {
+      "id": "PINS",
+      "category": "engineering",
+      "score": 80.0,
+      "findings": [
+        {
+          "severity": "warning",
+          "message": "1 dependencies lack exact version pins",
+          "recommendation": "For applications, commit a lockfile and use frozen installs. Library version ranges may be intentional.",
+          "file": "requirements.txt",
+          "line": null,
+          "snippet": null
+        }
+      ]
+    },
+    {
+      "id": "SECRETS",
+      "category": "security",
+      "score": 100.0,
+      "findings": []
+    }
+  ],
+  "passed": 5,
+  "duration_seconds": 0.003289,
+  "files_scanned": 4,
+  "skipped_files": 0
+}

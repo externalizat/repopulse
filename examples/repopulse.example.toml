@@ -1,0 +1,12 @@
+disabled_checks = []
+exclude_dirs = ["generated"]
+max_file_bytes = 1000000
+max_source_lines = 500
+fail_under = 75
+
+[category_weights]
+documentation = 2.0
+community = 1.0
+engineering = 2.0
+maintenance = 1.0
+security = 2.0

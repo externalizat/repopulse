@@ -1,0 +1,4 @@
+# Avoid scoring deliberately incomplete fixtures as the project itself.
+exclude_dirs = ["examples/sample-project", "tests/fixtures"]
+max_source_lines = 500
+fail_under = 75

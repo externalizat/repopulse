@@ -1,0 +1,6 @@
+include LICENSE README.md CONTRIBUTING.md CHANGELOG.md CODE_OF_CONDUCT.md SECURITY.md
+include Makefile .gitignore .repopulse.toml
+recursive-include .github *.yml *.md
+recursive-include examples *.py *.md *.json *.txt *.toml .env.example
+recursive-include tests *.py *.md *.txt *.yml LICENSE
+global-exclude *.py[cod]

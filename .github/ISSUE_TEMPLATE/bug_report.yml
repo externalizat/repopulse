@@ -1,0 +1,16 @@
+name: Bug report
+description: Report an incorrect result or CLI failure
+body:
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Command, Python and OS versions, and a minimal sanitized example. Never paste secrets.
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
